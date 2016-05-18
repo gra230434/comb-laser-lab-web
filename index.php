@@ -17,33 +17,31 @@
 get_header(); ?>
 
 <?php if ( is_home() ): ?>
-	<div id="comblaser_about_us" class="comblaseraboutus">
+	<section id="comblaser_about_us" class="comblaseraboutus">
 		<div class="CAU-text site-inner">
 			<div class="CAU-title">
 	  	  <h2>ABOUT US</h2>
-	  	  <p>關於我們</p>
-			</div>
-			<div class="CAU-post CAU-half CAU-half-title">
-				<h3>test test test test twentysixteen the custom logo</h3>
+	  	  <h4>關於我們</h4>
 			</div>
 			<div class="CAU-post CAU-half">
-				<p>
-					But when it comes to natural beauty in Japan, it's hard to top Tohoku.Located at the tip of Japan's main island of Honshu, the Tohoku region is made up of six prefectures: Aomori, Akita, Fukushima, Iwate, Miyagi and Yamagata.
-				</p>
-        <p>
-					Though devastated by the tsunami and earthquake in 2011, Tohoku's recovery has been swift.Japanese and foreign visitors alike are returning to the area -- and visiting in greater numbers -- for its timeless art, culture, food and scenery that's truly breathtaking in every season.
-				</p>
-				<p>
-					We've put together a gallery of natural Tohoku highlights that offers a glimpse of the beauty this region has to offer.
-				</p>
+				<div class="CAU-half-title">
+				  <h3>test test test test twentysixteen the custom logo</h3>
+				</div><!-- CAU-half-title -->
+			</div>
+			<div class="CAU-post CAU-half">
+				<div class="CAU-half-post">
+			  	<p>But when it comes to natural beauty in Japan, it's hard to top Tohoku.Located at the tip of Japan's main island of Honshu, the Tohoku region is made up of six prefectures: Aomori, Akita, Fukushima, Iwate, Miyagi and Yamagata.</p>
+          <p>Though devastated by the tsunami and earthquake in 2011, Tohoku's recovery has been swift.Japanese and foreign visitors alike are returning to the area -- and visiting in greater numbers -- for its timeless art, culture, food and scenery that's truly breathtaking in every season.</p>
+          <p>We've put together a gallery of natural Tohoku highlights that offers a glimpse of the beauty this region has to offer.</p>
+				</div><!-- CAU-half-post -->
       </div>
 			<div class="clear"></div>
 	  </div>
-	</div>
+	</section><!-- comblaseraboutus -->
 	<div id="comblaser_our_team" class="comblaserourteam">
 		<div class="COT-text site-inner">
 		  <h2>OUR TEAM</h2>
-		  <p>我們團隊</p>
+		  <h4>我們團隊</h4>
 		</div>
 	</div>
 <?php endif ?>
