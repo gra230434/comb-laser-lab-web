@@ -1535,6 +1535,13 @@ blockquote:after,
 	margin-bottom: 0;
 }
 
+.home-post {
+	margin: 0;
+}
+
+.home-post-li {
+	width: 100%;
+}
 
 /**
  * 11.1 - Header
@@ -1569,7 +1576,11 @@ blockquote:after,
 }
 
 .home-branding {
-	max-width: 50%;
+	width: 70%;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .custom-logo-link {
@@ -1594,6 +1605,7 @@ blockquote:after,
 	font-size: 23px;
 	font-size: 1.4375rem;
   line-height: 1.2;
+	color: rgb(0, 171, 255);
 }
 .site-branding .site-title a,
 .site-branding .home-title a {
@@ -1616,6 +1628,7 @@ blockquote:after,
 	display: none;
 	font-weight: 700;
 	line-height: 2;
+	clear: both;
 }
 .site-description {
 	font-size: 13px;
@@ -2408,7 +2421,8 @@ body.search-no-results .page-header {
  */
 
 .site-footer {
-	padding: 0 7.6923% 1.75em;
+	padding: 0 7.6923%;
+	background-color: #1A1A1A;
 }
 
 .site-info {
@@ -3397,7 +3411,7 @@ p > video {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 0 4.5455% 3.5em;
+		padding: 0 4.5455%;
 	}
 
 	.site-footer .social-navigation {
@@ -3439,6 +3453,10 @@ p > video {
 		padding-right: 15%;
 		padding-left: 15%;
 	}
+
+	.home-post-li {
+		width: 33%;
+	}
 }
 
 
@@ -3455,7 +3473,7 @@ p > video {
 		padding: 3.5em 4.5455%;
 	}
   .home-header {
-		padding: 15em 5%;
+		padding: 0 5%;
 	}
 	.site-branding,
 	.site-header-menu,
@@ -3789,6 +3807,7 @@ p > video {
 	body:not(.search-results) .entry-summary .aligncenter {
 		margin-bottom: 1.5217391304em;
 	}
+
 }
 
 

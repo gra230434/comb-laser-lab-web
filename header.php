@@ -25,16 +25,16 @@
 <div id="page" class="site">
 	<?php $header_nav_menu = array('theme_location' => 'primary',
                                 	'menu_class'    => 'primary-menu', ); ?>
-																	
+
 	<?php if( is_home() or is_front_page() ): ?>
 	<header id="masthead" class="home-header site-header-background" role="banner">
 		<div class="site-header-main home-header-main">
-			<div class="site-branding home-branding">
-					<h1 class="home-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<div class="home-branding">
+				<h1 class="home-title" style="float:left">Laboratory for comb laser</h1><h1 class="home-title" style="float:right">based spectroscopy</h1>
 				<?php
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
-						<p class="home-description"><?php echo $description; ?></p>
+						<h3 class="home-description"><?php echo $description; ?></h3>
 					<?php endif; ?>
 			</div><!-- .home-branding -->
 
@@ -45,7 +45,7 @@
 							<?php	wp_nav_menu( $header_nav_menu ); ?>
 						</nav><!-- .main-navigation -->
 					</div><!-- .site-header-menu -->
-				<?php endif; ?>
+				<?php endif; //has_nav_menu( 'primary' ) ?>
 		</div><!-- .home-header-main -->
 	</header><!-- .home-header  .site-header-background -->
 	<?php //is_home() or is_front_page() ?>
@@ -79,7 +79,7 @@
 							<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 								<?php	wp_nav_menu( $header_nav_menu ); ?>
 							</nav><!-- .main-navigation -->
-						<?php endif; ?>
+						<?php endif; //has_nav_menu( 'primary' ) ?>
 
 					</div><!-- .site-header-menu -->
 				<?php endif; ?>
