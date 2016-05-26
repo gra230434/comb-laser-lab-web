@@ -163,6 +163,10 @@ msgstr ""
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
+#: template-parts/content-home.php:40
+msgid "Edit"
+msgstr ""
+
 #: image.php:102 single.php:29
 msgctxt "Parent post link"
 msgid ""

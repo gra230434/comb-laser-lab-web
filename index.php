@@ -17,6 +17,7 @@
 get_header(); ?>
 
 <?php if ( is_home() ): ?>
+
 	<section id="comblaser_about_us" class="comblaseraboutus">
 		<div class="CAU-text site-inner">
 			<div class="CAU-title">
@@ -38,12 +39,13 @@ get_header(); ?>
 			<div class="clear"></div>
 	  </div>
 	</section><!-- comblaseraboutus -->
-	<div id="comblaser_our_team" class="comblaserourteam">
+
+	<section id="comblaser_our_team" class="comblaserourteam">
 		<div class="COT-text site-inner">
 		  <h2>OUR TEAM</h2>
 		  <h4>我們團隊</h4>
 		</div>
-	</div>
+	</section><!-- comblaserourteam -->
 <?php endif ?>
 <!-- 12345678 -->
 <div class="site-inner">
@@ -52,6 +54,18 @@ get_header(); ?>
 		  <main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+			<?php if ( is_home() ) {
+				# code...
+				// Start the loop.
+				echo "<ul class='home-post'>";
+				while ( have_posts() ) : the_post();
+          echo "<li class='home-post-li'>";
+					get_template_part( 'template-parts/content', "home" );
+					echo "</li>";
+				// End the loop.
+				endwhile;
+				echo "</ul><!-- .home-post -->";
+			} ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>

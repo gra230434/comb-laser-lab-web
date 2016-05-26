@@ -25,11 +25,11 @@
 <div id="page" class="site">
 	<?php $header_nav_menu = array('theme_location' => 'primary',
                                 	'menu_class'    => 'primary-menu', ); ?>
+																	
 	<?php if( is_home() or is_front_page() ): ?>
 	<header id="masthead" class="home-header site-header-background" role="banner">
 		<div class="site-header-main home-header-main">
 			<div class="site-branding home-branding">
-				<?php twentysixteen_the_custom_logo(); ?>
 					<h1 class="home-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 					$description = get_bloginfo( 'description', 'display' );
