@@ -2424,10 +2424,6 @@ body.search-no-results .page-header {
 	width: 1020px;
 }
 
-.COT-ul h3{
-	font-size: 1.8em;
-}
-
 /**
  * 11.6 - Footer
  */
@@ -2501,7 +2497,8 @@ body.search-no-results .page-header {
 	font-size: 2.5em;
 }
 .CAU-text h3, .COT-text h3 {
-	font-size: 1.75em;
+	font-size: 1.6em;
+	margin: 15px 0 5px;
 }
 .CAU-text h4, .COT-text h4 {
 	font-size: 1.45em;
@@ -3424,6 +3421,7 @@ p > video {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding: 0 4.5455%;
+		margin-bottom: 21px;
 	}
 
 	.site-footer .social-navigation {

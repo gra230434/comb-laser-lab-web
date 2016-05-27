@@ -187,8 +187,8 @@ function twentysixteen_widgets_init() {
 		'description'   => __( 'please add member or delete member here', 'twentysixteen' ),
 		'before_widget' => '<li id="%1$s" class="widget-member">',
 		'after_widget'  => '</li><!-- .widget-member -->',
-		'before_title'  => '<h5 class="widget-member-title">',
-		'after_title'   => '</h5>',
+		'before_title'  => '<h3 class="widget-member-title">',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'twentysixteen_widgets_init' );
