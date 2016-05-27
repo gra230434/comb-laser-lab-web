@@ -44,6 +44,10 @@ get_header(); ?>
 		<div class="COT-text site-inner">
 		  <h2>OUR TEAM</h2>
 		  <h4>我們團隊</h4>
+			<ul class="COT-ul">
+		  	<?php dynamic_sidebar( 'sidebar-mem' ); ?>
+			</ul>
+			<div class="clear"></div>
 		</div>
 	</section><!-- comblaserourteam -->
 <?php endif ?>
@@ -52,7 +56,7 @@ get_header(); ?>
 <div class="site-inner">
   <div id="content" class=<?php echo "'site-content";
 	                              if( is_home() ){echo " no-sidebar";
-																echo "'";}?>>
+																echo "'";}?>
 	  <div id="primary" class="content-area">
 		  <main id="main" class="site-main" role="main">
 

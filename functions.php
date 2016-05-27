@@ -180,6 +180,16 @@ function twentysixteen_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Members', 'twentysixteen' ),
+		'id'            => 'sidebar-mem',
+		'description'   => __( 'please add member or delete member here', 'twentysixteen' ),
+		'before_widget' => '<li id="%1$s" class="widget-member">',
+		'after_widget'  => '</li><!-- .widget-member -->',
+		'before_title'  => '<h5 class="widget-member-title">',
+		'after_title'   => '</h5>',
+	) );
 }
 add_action( 'widgets_init', 'twentysixteen_widgets_init' );
 
