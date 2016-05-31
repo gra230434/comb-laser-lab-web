@@ -9,11 +9,11 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-
+  <div class="clear"></div>
 	</div><!-- .site-content -->
 </div><!-- .site-inner -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		
+
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
 				<?php

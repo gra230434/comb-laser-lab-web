@@ -24,16 +24,21 @@ get_header(); ?>
 	  	  <h2>ABOUT US</h2>
 	  	  <h4>關於我們</h4>
 			</div>
-			<div class="CAU-post CAU-half">
+			<div class="CAU-post CAU-half-left">
 				<div class="CAU-half-title">
-				  <h3>test test test test twentysixteen the custom logo</h3>
+				  <h3>大家好，我是實驗室負責人鄭王曜</h3>
+					<p>主要負責籌錢，讓大家工作開心，還有負責解決同學們實驗上的問題，包含實驗的阻礙與心靈的創傷，求診完的同學通常含笑離開，因為我十個建議常有一個會是對的。</p>
+					<p>其實我也會懷疑，那一個對的是因為同學問診時描述錯誤所致．但基本上，我在實驗室，對學生而言還是有用的，此點必然無誤。</p>
+					<span><strong>TEL:</strong>886-3-4227151 ext 65337</span><br>
+					<span><strong>Email:</strong>wycheng@ncu.edu.tw</span>
 				</div><!-- CAU-half-title -->
 			</div>
-			<div class="CAU-post CAU-half">
+			<div class="CAU-post CAU-half-right">
 				<div class="CAU-half-post">
-			  	<p>But when it comes to natural beauty in Japan, it's hard to top Tohoku.Located at the tip of Japan's main island of Honshu, the Tohoku region is made up of six prefectures: Aomori, Akita, Fukushima, Iwate, Miyagi and Yamagata.</p>
-          <p>Though devastated by the tsunami and earthquake in 2011, Tohoku's recovery has been swift.Japanese and foreign visitors alike are returning to the area -- and visiting in greater numbers -- for its timeless art, culture, food and scenery that's truly breathtaking in every season.</p>
-          <p>We've put together a gallery of natural Tohoku highlights that offers a glimpse of the beauty this region has to offer.</p>
+			  	<p>我們實驗室屬於物理領域中的AMO領域中的”High-precision measurement”，美國物理協會稱為︰Atomic, Molecular Optical Science. 其中原子分子是形容詞，即，應用於原子分子等基礎物理的光學探討</p>
+          <p>當然，這個領域發展出來的技術對其他領域也會有應用。例如，量測重力波的關鍵技術，Pound-Drever Hall鎖頻，即是我們領域發展出來的．近代物理的發展。</p>
+          <p>在我們領域之中每隔幾年就拿諾貝爾獎．以近二十年為例．1997年laser cooling; 2001年 Bose-Einstein Condensation; 2005年 high-precision measurement and comb laser; 2012年 Quantum manipulation (quantum computing)。</p>
+					<p>歡迎同學們加入實驗室，學點技術，想想物理，感受team work，其樂無窮。</p>
 				</div><!-- CAU-half-post -->
       </div>
 			<div class="clear"></div>

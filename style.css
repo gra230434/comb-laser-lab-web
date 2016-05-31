@@ -2417,6 +2417,8 @@ body.search-no-results .page-header {
 .widget-member {
 	width: 25%;
 	padding: 0 1%;
+	float: left;
+  margin-bottom: 20px;
 }
 
 .COT-ul {
@@ -2477,13 +2479,25 @@ body.search-no-results .page-header {
 .CAU-title {
 	text-align: center;
 }
-.CAU-half {
-	width: 50%;
+.CAU-half-left {
+	width: 47%;
+}
+.CAU-half-right {
+	width: 53%;
+}
+.CAU-half-left, .CAU-half-right {
 	float: left;
 }
 .CAU-half-title {
-	padding: 10px 40px;
+	padding: 10px 20px 10px 10px;
+	width: 80%;
 	text-align: right;
+	float: right;;
+}
+.CAU-half-post {
+	padding-left: 10px;
+	width: 90%;
+	float: left;
 }
 .comblaserourteam {
 	background-color: rgb(62, 62, 62);
@@ -2497,8 +2511,8 @@ body.search-no-results .page-header {
 	font-size: 2.5em;
 }
 .CAU-text h3, .COT-text h3 {
-	font-size: 1.6em;
-	margin: 15px 0 5px;
+	font-size: 1.45em;
+	margin-bottom: 10px;
 }
 .CAU-text h4, .COT-text h4 {
 	font-size: 1.45em;
@@ -2826,7 +2840,7 @@ p > video {
 	}
 
 	.site {
-		margin: 21px;
+		margin: 21px 21px 0 21px;
 	}
 
 	.site-main {
@@ -3189,6 +3203,10 @@ p > video {
 		float: left;
 		margin-right: -100%;
 		width: 70%;
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0px 0px 10px #4C4C4C;
+    padding: 10px;
+    border-radius: 5px;
 	}
 
 	.entry-header,
