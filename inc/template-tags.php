@@ -250,3 +250,86 @@ function twentysixteen_the_custom_logo() {
 	}
 }
 endif;
+
+
+/*
+ * for comblaser home
+ */
+ if ( ! function_exists( 'comblaser_post_thumbnail' ) ) :
+ /**
+  * Displays an optional post thumbnail.
+  *
+  * Wraps the post thumbnail in an anchor element on index views, or a div
+  * element when on single views.
+  *
+  * Create your own comblaser_post_thumbnail() function to override in a child theme.
+  *
+  * @since Twenty Sixteen 1.0
+  */
+ function comblaser_post_thumbnail( $class = 'post-thumbnail' ) {
+ 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+ 		return;
+ 	}
+
+ 	if ( is_singular() || is_home() ) :
+ 	?>
+
+ 	<div class="<?php echo $class ?>">
+ 		<?php the_post_thumbnail(); ?>
+ 	</div><!-- .post-thumbnail -->
+
+ 	<?php else : ?>
+
+ 	<a class="<?php echo $class ?>" href="<?php the_permalink(); ?>" aria-hidden="true">
+ 		<?php the_post_thumbnail( 'post-thumbnail', array( 'alt' => the_title_attribute( 'echo=0' ) ) ); ?>
+ 	</a>
+
+<?php endif; // End is_singular() or is_home()
+ }
+ endif;
+
+ if ( ! function_exists( 'comblaser_excerpt' ) ) :
+ 	/**
+ 	 * Displays the optional excerpt.
+ 	 *
+ 	 * Wraps the excerpt in a div element.
+ 	 *
+ 	 * Create your own twentysixteen_excerpt() function to override in a child theme.
+ 	 *
+ 	 * @since Twenty Sixteen 1.0
+ 	 *
+ 	 * @param string $class Optional. Class string of the div element. Defaults to 'entry-summary'.
+ 	 */
+ 	function comblaser_excerpt( $class = 'entry-summary' ) {
+ 		$class = esc_attr( $class );
+
+ 		if ( has_excerpt() || is_search() ) : ?>
+ 			<div class="<?php echo $class; ?>">
+ 				<?php the_excerpt(); ?>
+ 			</div><!-- .<?php echo $class; ?> -->
+ 		<?php endif;
+ 	}
+ endif;
+
+ if ( ! function_exists( 'comblaser_content' ) ) :
+ 	/**
+ 	 * Displays the optional excerpt.
+ 	 *
+ 	 * Wraps the excerpt in a div element.
+ 	 *
+ 	 * Create your own twentysixteen_excerpt() function to override in a child theme.
+ 	 *
+ 	 * @since Twenty Sixteen 1.0
+ 	 *
+ 	 * @param string $class Optional. Class string of the div element. Defaults to 'entry-summary'.
+ 	 */
+ 	function comblaser_content( $class = 'entry-content' ) {
+ 		$class = esc_attr( $class );
+
+ 		if ( is_home() ) : ?>
+ 			<div class="<?php echo $class; ?>">
+ 				<?php the_content(); ?>
+ 			</div><!-- .<?php echo $class; ?> -->
+ 		<?php endif;
+ 	}
+ endif;

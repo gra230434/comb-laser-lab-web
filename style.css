@@ -1535,11 +1535,39 @@ blockquote:after,
 }
 
 .home-post {
-	margin: 0;
+	margin: 50px 0;
 }
 
 .home-post-li {
 	width: 100%;
+}
+
+.home-content {
+  height: 350px;
+  position: relative;
+}
+
+.home-entry-header {
+	background-color: white;
+	height: 150px;
+	width: 90%;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px 5px;
+	position: absolute;
+	top: 0px;
+	left: 5%;
+}
+
+.home-entry-content {
+	background: #2DB5FF;
+	height: 275px;
+	width: 97%;
+	border-radius: 2px;
+	padding: 20px 10px;
+	position: absolute;
+	bottom: 0px;
+	left: 1.5%;
 }
 
 /**
@@ -3483,7 +3511,8 @@ p > video {
 	}
 
 	.home-post-li {
-		width: 33%;
+		width: 25%;
+		padding: 5px;
 	}
 }
 

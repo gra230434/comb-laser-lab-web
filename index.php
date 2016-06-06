@@ -62,8 +62,7 @@ get_header(); ?>
   <div id="content" class=<?php echo "'site-content";
 	                              if( is_home() ){echo " no-sidebar";
 																echo "'";}?>>
-	  <div id="primary" class="content-area">
-		  <main id="main" class="site-main" role="main">
+	  <div id="primary" class="home-content-area">
 
 		<?php if ( have_posts() ) : ?>
 			<?php if ( is_home() ) : // have post and on home page?>
@@ -74,33 +73,31 @@ get_header(); ?>
 					echo "<li class='home-post-li'>";
 					get_template_part( 'template-parts/content', "home" );
 					echo "</li>";
-			    // End the loop.
-		  		endwhile;
-			    ?>
+		  		endwhile;// End the loop.?>
 				</ul><!-- .home-post -->
 				<?php // home post end ?>
-			<?php else:
 
-			// Start the loop.
-			  while ( have_posts() ) : the_post();
+			<?php else: ?>
+			  <main id="main" class="site-main" role="main">
+			  <?php // Start the loop.
+			    while ( have_posts() ) : the_post();
+			      /*
+			       * Include the Post-Format-specific template for the content.
+			       * If you want to override this in a child theme, then include a file
+			       * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+			       */
+			      get_template_part( 'template-parts/content', get_post_format() );
+			    // End the loop.
+			    endwhile;
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-			  	get_template_part( 'template-parts/content', get_post_format() );
-
-			// End the loop.
-			  endwhile;
-
-			// Previous/next page navigation.
-		  	the_posts_pagination( array(
-		  		'prev_text'          => __( 'Previous page', 'twentysixteen' ),
-		  		'next_text'          => __( 'Next page', 'twentysixteen' ),
-		  		'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
-		  	) );
-      endif;// <end have post and on home page>
+			    // Previous/next page navigation.
+			    the_posts_pagination( array(
+		  	  	'prev_text'          => __( 'Previous page', 'twentysixteen' ),
+		  	  	'next_text'          => __( 'Next page', 'twentysixteen' ),
+            'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>',
+		      	) ); ?>
+				  </main><!-- .site-main -->
+			<?php endif;// <end have post and on home page>
 
 		// if ( have_posts() ) :  <If no content, include the "No posts found" template.>
 		else :
@@ -109,8 +106,7 @@ get_header(); ?>
 		endif;
 		?>
 
-		  </main><!-- .site-main -->
-	</div><!-- .content-area -->
+	  </div><!-- .home-content-area -->
 
 <?php if( ! is_home() ):
 	get_sidebar();
