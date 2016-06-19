@@ -24,7 +24,7 @@ get_header(); ?>
 	  	  <h2>ABOUT US</h2>
 	  	  <h4>關於我們</h4>
 			</div>
-			<div class="CAU-post CAU-half-left">
+			<div class="CAU-post CAU-half-lef">
 				<div class="CAU-half-title">
 				  <h3>大家好，我是實驗室負責人鄭王曜</h3>
 					<p>主要負責籌錢，讓大家工作開心，還有負責解決同學們實驗上的問題，包含實驗的阻礙與心靈的創傷，求診完的同學通常含笑離開，因為我十個建議常有一個會是對的。</p>

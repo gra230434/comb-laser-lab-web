@@ -51,6 +51,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 15.0 - Print
  */
 
+/* 導入google字體 */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 /**
  * 1.0 - Normalize
@@ -1603,7 +1605,7 @@ blockquote:after,
 }
 
 .home-branding {
-	width: 70%;
+	width: 60%;
 	position: absolute;
   top: 50%;
   left: 50%;
@@ -1632,7 +1634,7 @@ blockquote:after,
 	font-size: 23px;
 	font-size: 1.4375rem;
   line-height: 1.2;
-	color: rgb(0, 171, 255);
+	color: rgb(0, 165, 255);
 }
 .site-branding .site-title a,
 .site-branding .home-title a {
@@ -2526,6 +2528,7 @@ body.search-no-results .page-header {
 	padding-left: 10px;
 	width: 90%;
 	float: left;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 .comblaserourteam {
 	background-color: rgb(62, 62, 62);
