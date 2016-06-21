@@ -1602,6 +1602,10 @@ blockquote:after,
 	overflow: hidden;
 }
 
+.home-header-main{
+	float: right;
+}
+
 .home-branding {
 	width: 70%;
 	position: absolute;

@@ -24,6 +24,9 @@ get_header(); ?>
 	  	  <h2>ABOUT US</h2>
 	  	  <h4>關於我們</h4>
 			</div>
+			<div style="margin-bottom:50px;">
+				<img src="<?php bloginfo('template_directory'); ?>/image/about.jpg">
+			</div>
 			<div class="CAU-post CAU-half-left">
 				<div class="CAU-half-title">
 				  <h3>大家好，我是實驗室負責人鄭王曜</h3>
