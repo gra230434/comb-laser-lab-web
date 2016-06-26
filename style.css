@@ -1536,10 +1536,6 @@ blockquote:after,
 	outline: 0;
 }
 
-.site-main {
-	margin-bottom: 3.5em;
-}
-
 .site-main > :last-child {
 	margin-bottom: 0;
 }
@@ -1764,7 +1760,7 @@ blockquote:after,
 	font-family: 'Noto Sans TC',Merriweather, Georgia, serif;
 	font-size: 28px;
 	font-size: 1.75rem;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1.25;
 	margin-bottom: 1em;
 }
@@ -2231,6 +2227,12 @@ body.search-no-results .page-header {
 	border-left: 3px #183794 solid;
 	border-right: 3px #00ACFF solid;
 	border-bottom: 3px #00ACFF solid;
+}
+
+.AutoDownload a {
+	color: white;
+	font-weight: 400;
+	box-shadow: none;
 }
 
 .comments-area {
@@ -2887,10 +2889,6 @@ p > video {
 		margin: 21px 21px 0 21px;
 	}
 
-	.site-main {
-		margin-bottom: 5.25em;
-	}
-
 	.site-header {
 		padding: 3.9375em 7.6923%;
 	}
@@ -2905,7 +2903,7 @@ p > video {
 	}
   .site-title {
 		font-size: 28px;
-		font-size: 1.75rem;
+		font-size: 2.5rem;
 		line-height: 1.25;
 	}
 	.home-title {
@@ -3126,7 +3124,25 @@ p > video {
 
 	.main-navigation {
 		margin: 0;
+		float: left;
 	}
+
+	.dropsearch {
+		float: left;
+		position: relative;
+    display: inline-block;
+		border: 1px solid rgb(0, 0, 0);
+	}
+
+	.dropdown-search-div {
+		display: none;
+		position: absolute;
+		right: 0px;
+		bottom: -50px;
+		width: 300px;
+	}
+
+	.show {display:block;}
 
 	.main-navigation .primary-menu,
 	.main-navigation .primary-menu > li {
@@ -3170,7 +3186,7 @@ p > video {
 		background-color: #fff;
 		border: 1px solid #d1d1d1;
 		border-bottom-width: 0;
-		width: 150px;
+		width: 200px;
 	}
 
 	.main-navigation ul ul a {
@@ -3255,7 +3271,7 @@ p > video {
 		width: 74%;
 		background-color: rgba(255, 255, 255, 0.9);
 		box-shadow: 0px 0px 10px #4C4C4C;
-    padding: 30px;
+    padding: 60px 30px;
     border-radius: 5px;
 	}
 
@@ -3544,12 +3560,9 @@ p > video {
  */
 
 @media screen and (min-width: 61.5625em) {
-	.site-main {
-		margin-bottom: 7.0em;
-	}
 
 	.site-header {
-		padding: 3.5em 4.5455%;
+		padding: 4em 4.5455% 6em;
 	}
   .home-header {
 		padding: 5% 10%;
@@ -3614,7 +3627,7 @@ p > video {
 	.entry-summary h1,
 	.comment-content h1 {
 		font-size: 33px;
-		font-size: 2.0625rem;
+		font-size: 2rem;
 		line-height: 1.2727272727;
 		margin-top: 1.696969697em;
 		margin-bottom: 0.8484848485em;
@@ -4088,10 +4101,6 @@ p > video {
 	.site-branding {
 		margin-top: 0;
 		margin-bottom: 1.75em;
-	}
-
-	.site-main {
-		margin-bottom: 3.5em;
 	}
 
 	.entry-header,

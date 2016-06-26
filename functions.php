@@ -279,6 +279,8 @@ function twentysixteen_scripts() {
 
 	wp_enqueue_script( 'twentysixteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20160412', true );
 
+	wp_enqueue_script( 'comblasersearch', get_template_directory_uri() . '/js/searchbutton.js', array(), '20160626', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

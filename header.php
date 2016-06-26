@@ -36,6 +36,12 @@
 					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 						<?php	wp_nav_menu( $header_nav_menu ); ?>
 					</nav><!-- .main-navigation -->
+					<div id="dropdown-search" class="dropsearch">
+						<button id="DropdownSearchButton" class="dropdown-search-button">search</button>
+						<div id="DropdownSearchDiv" class="dropdown-search-div">
+							<?php get_search_form(); ?>
+						</div>
+					</div><!-- .dropsearch -->
 				</div><!-- .site-header-menu -->
 			<?php endif; //has_nav_menu( 'primary' ) ?>
 
@@ -76,6 +82,12 @@
 					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'twentysixteen' ); ?>">
 						<?php	wp_nav_menu( $header_nav_menu ); ?>
 					</nav><!-- .main-navigation -->
+					<div id="dropdown-search" class="dropsearch">
+						<button id="DropdownSearchButton" class="dropdown-search-button">search</button>
+						<div id="DropdownSearchDiv" class="dropdown-search-div">
+							<?php get_search_form(); ?>
+						</div>
+					</div><!-- .dropsearch -->
 				</div><!-- .site-header-menu -->
 			<?php endif; ?>
 			</div><!-- .site-header-nav -->
