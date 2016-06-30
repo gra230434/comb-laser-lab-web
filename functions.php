@@ -182,6 +182,26 @@ function twentysixteen_widgets_init() {
 	) );
 
 	register_sidebar( array(
+		'name'          => __( 'teacher', 'twentysixteen' ),
+		'id'            => 'sidebar-teacher',
+		'description'   => __( 'please add member or delete member here', 'twentysixteen' ),
+		'before_widget' => '<li id="%1$s" class="widget-member">',
+		'after_widget'  => '</li><!-- .widget-member -->',
+		'before_title'  => '<h3 class="widget-member-title">',
+		'after_title'   => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'access', 'twentysixteen' ),
+		'id'            => 'sidebar-access',
+		'description'   => __( 'please add member or delete member here', 'twentysixteen' ),
+		'before_widget' => '<li id="%1$s" class="widget-member">',
+		'after_widget'  => '</li><!-- .widget-member -->',
+		'before_title'  => '<h3 class="widget-member-title">',
+		'after_title'   => '</h3>',
+	) );
+
+	register_sidebar( array(
 		'name'          => __( 'Members', 'twentysixteen' ),
 		'id'            => 'sidebar-mem',
 		'description'   => __( 'please add member or delete member here', 'twentysixteen' ),
