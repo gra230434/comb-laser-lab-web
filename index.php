@@ -52,21 +52,33 @@ get_header(); ?>
 		<div class="COT-text site-inner">
 		  <h2>OUR TEAM</h2>
 		  <h4>我們團隊</h4>
-			<h3>指導老師</h3>
+			<div>
 				<ul class="COT-ul">
 		  		<?php dynamic_sidebar( 'sidebar-teacher' ); ?>
 				</ul>
 				<div class="clear"></div>
-			<h3>實驗室學生</h3>
+			</div>
+			<div>
+				<h3>實驗室學生</h3>
 				<ul class="COT-ul">
 		  		<?php dynamic_sidebar( 'sidebar-mem' ); ?>
 				</ul>
 				<div class="clear"></div>
-			<h3>訪問學者</h3>
+			</div>
+			<div>
+				<h3>實驗室學生</h3>
 				<ul class="COT-ul">
-		  		<?php dynamic_sidebar( 'sidebar-access' ); ?>
+					<?php dynamic_sidebar( 'sidebar-missed' ); ?>
 				</ul>
 				<div class="clear"></div>
+			</div>
+			<div>
+				<h3>外國訪客</h3>
+					<ul class="COT-ul">
+		  			<?php dynamic_sidebar( 'sidebar-access' ); ?>
+					</ul>
+				<div class="clear"></div>
+			</div>
 		</div>
 	</section><!-- comblaserourteam -->
 <?php endif ?>

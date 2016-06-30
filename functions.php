@@ -182,34 +182,44 @@ function twentysixteen_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'teacher', 'twentysixteen' ),
+		'name'          => __( 'Teacher', 'twentysixteen' ),
 		'id'            => 'sidebar-teacher',
-		'description'   => __( 'please add member or delete member here', 'twentysixteen' ),
+		'description'   => __( 'please add teacher or delete teacher here', 'twentysixteen' ),
 		'before_widget' => '<li id="%1$s" class="widget-member">',
 		'after_widget'  => '</li><!-- .widget-member -->',
-		'before_title'  => '<h3 class="widget-member-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="widget-member-title">',
+		'after_title'   => '</h4>',
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'access', 'twentysixteen' ),
+		'name'          => __( 'Visitor', 'twentysixteen' ),
 		'id'            => 'sidebar-access',
-		'description'   => __( 'please add member or delete member here', 'twentysixteen' ),
+		'description'   => __( 'please add visitor or delete visitor here', 'twentysixteen' ),
 		'before_widget' => '<li id="%1$s" class="widget-member">',
 		'after_widget'  => '</li><!-- .widget-member -->',
-		'before_title'  => '<h3 class="widget-member-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="widget-member-title">',
+		'after_title'   => '</h4>',
 	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Members', 'twentysixteen' ),
 		'id'            => 'sidebar-mem',
-		'description'   => __( 'please add member or delete member here', 'twentysixteen' ),
+		'description'   => __( 'please add members or delete members here', 'twentysixteen' ),
 		'before_widget' => '<li id="%1$s" class="widget-member">',
 		'after_widget'  => '</li><!-- .widget-member -->',
-		'before_title'  => '<h3 class="widget-member-title">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="widget-member-title">',
+		'after_title'   => '</h4>',
 	) );
+
+		register_sidebar( array(
+			'name'          => __( 'Missed members', 'twentysixteen' ),
+			'id'            => 'sidebar-missed',
+			'description'   => __( 'please add missed member or delete missed member here', 'twentysixteen' ),
+			'before_widget' => '<li id="%1$s" class="widget-member">',
+			'after_widget'  => '</li><!-- .widget-member -->',
+			'before_title'  => '<h4 class="widget-member-title">',
+			'after_title'   => '</h4>',
+		) );
 }
 add_action( 'widgets_init', 'twentysixteen_widgets_init' );
 

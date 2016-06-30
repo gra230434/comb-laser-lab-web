@@ -2463,7 +2463,7 @@ body.search-no-results .page-header {
 	width: 25%;
 	padding: 0 1%;
 	float: left;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 .COT-ul {
@@ -2558,11 +2558,10 @@ body.search-no-results .page-header {
 }
 .CAU-text h3, .COT-text h3 {
 	font-size: 1.45em;
-	margin-bottom: 10px;
+	margin-bottom: 35px;
 }
 .CAU-text h4, .COT-text h4 {
 	font-size: 1.45em;
-	margin: 0 0 1.75em;
 }
 .CAU-text p, .COT-text p {
 	font-size: 1em;
