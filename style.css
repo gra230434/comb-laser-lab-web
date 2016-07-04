@@ -1885,6 +1885,12 @@ a.post-thumbnail:focus {
 	margin-top: 0;
 }
 
+.entry-content button {
+	font-size: 12px;
+	border-radius: 0px;
+	margin-top: 12px;
+}
+
 .post-navigation .post-title,
 .entry-title,
 .comments-title {
